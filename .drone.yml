@@ -18,9 +18,9 @@ steps:
 - name: build
   image: golang:1.11
   commands:
-  - "go build -ldflags \"-extldflags \\\\\"-static\\\\\"\" -o release/linux/amd64/drone-server github.com/drone/drone/cmd/drone-server"
-  - CGO_ENABLED=0 go build -o release/linux/amd64/drone-agent github.com/drone/drone/cmd/drone-agent
-  - CGO_ENABLED=0 go build -o release/linux/amd64/drone-controller github.com/drone/drone/cmd/drone-controller
+  - "go build -ldflags \"-extldflags \\\\\"-static\\\\\"\" -o release/linux/amd64/drone-server github.com/renozhao/drone/cmd/drone-server"
+  - CGO_ENABLED=0 go build -o release/linux/amd64/drone-agent github.com/renozhao/drone/cmd/drone-agent
+  - CGO_ENABLED=0 go build -o release/linux/amd64/drone-controller github.com/renozhao/drone/cmd/drone-controller
   volumes:
   - name: gopath
     path: /go
@@ -37,7 +37,7 @@ steps:
     dockerfile: docker/Dockerfile.agent.linux.amd64
     password:
       from_secret: docker_password
-    repo: drone/agent
+    repo: renozhao/agent
     username:
       from_secret: docker_username
   when:
@@ -53,7 +53,7 @@ steps:
     dockerfile: docker/Dockerfile.controller.linux.amd64
     password:
       from_secret: docker_password
-    repo: drone/controller
+    repo: renozhao/controller
     username:
       from_secret: docker_username
   when:
@@ -69,7 +69,7 @@ steps:
     dockerfile: docker/Dockerfile.server.linux.amd64
     password:
       from_secret: docker_password
-    repo: drone/drone
+    repo: renozhao/drone
     username:
       from_secret: docker_username
   when:
@@ -101,9 +101,9 @@ steps:
 - name: build
   image: golang:1.11
   commands:
-  - "go build -ldflags \"-extldflags \\\\\"-static\\\\\"\" -o release/linux/arm/drone-server github.com/drone/drone/cmd/drone-server"
-  - CGO_ENABLED=0 go build -o release/linux/arm/drone-agent github.com/drone/drone/cmd/drone-agent
-  - CGO_ENABLED=0 go build -o release/linux/arm/drone-controller github.com/drone/drone/cmd/drone-controller
+  - "go build -ldflags \"-extldflags \\\\\"-static\\\\\"\" -o release/linux/arm/drone-server github.com/renozhao/drone/cmd/drone-server"
+  - CGO_ENABLED=0 go build -o release/linux/arm/drone-agent github.com/renozhao/drone/cmd/drone-agent
+  - CGO_ENABLED=0 go build -o release/linux/arm/drone-controller github.com/renozhao/drone/cmd/drone-controller
   volumes:
   - name: gopath
     path: /go
@@ -120,7 +120,7 @@ steps:
     dockerfile: docker/Dockerfile.agent.linux.arm
     password:
       from_secret: docker_password
-    repo: drone/agent
+    repo: renozhao/agent
     username:
       from_secret: docker_username
   when:
@@ -136,7 +136,7 @@ steps:
     dockerfile: docker/Dockerfile.controller.linux.arm
     password:
       from_secret: docker_password
-    repo: drone/controller
+    repo: renozhao/controller
     username:
       from_secret: docker_username
   when:
@@ -152,7 +152,7 @@ steps:
     dockerfile: docker/Dockerfile.server.linux.arm
     password:
       from_secret: docker_password
-    repo: drone/drone
+    repo: renozhao/drone
     username:
       from_secret: docker_username
   when:
@@ -184,9 +184,9 @@ steps:
 - name: build
   image: golang:1.11
   commands:
-  - "go build -ldflags \"-extldflags \\\\\"-static\\\\\"\" -o release/linux/arm64/drone-server github.com/drone/drone/cmd/drone-server"
-  - CGO_ENABLED=0 go build -o release/linux/arm64/drone-agent github.com/drone/drone/cmd/drone-agent
-  - CGO_ENABLED=0 go build -o release/linux/arm64/drone-controller github.com/drone/drone/cmd/drone-controller
+  - "go build -ldflags \"-extldflags \\\\\"-static\\\\\"\" -o release/linux/arm64/drone-server github.com/renozhao/drone/cmd/drone-server"
+  - CGO_ENABLED=0 go build -o release/linux/arm64/drone-agent github.com/renozhao/drone/cmd/drone-agent
+  - CGO_ENABLED=0 go build -o release/linux/arm64/drone-controller github.com/renozhao/drone/cmd/drone-controller
   volumes:
   - name: gopath
     path: /go
@@ -203,7 +203,7 @@ steps:
     dockerfile: docker/Dockerfile.agent.linux.arm64
     password:
       from_secret: docker_password
-    repo: drone/agent
+    repo: renozhao/agent
     username:
       from_secret: docker_username
   when:
@@ -219,7 +219,7 @@ steps:
     dockerfile: docker/Dockerfile.controller.linux.arm64
     password:
       from_secret: docker_password
-    repo: drone/controller
+    repo: renozhao/controller
     username:
       from_secret: docker_username
   when:
@@ -235,7 +235,7 @@ steps:
     dockerfile: docker/Dockerfile.server.linux.arm64
     password:
       from_secret: docker_password
-    repo: drone/drone
+    repo: renozhao/drone
     username:
       from_secret: docker_username
   when:

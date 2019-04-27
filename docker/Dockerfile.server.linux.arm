@@ -1,4 +1,4 @@
-# docker build --rm -f docker/Dockerfile -t drone/drone .
+# docker build --rm -f docker/Dockerfile -t renozhao/drone .
 
 FROM alpine:3.9 as alpine
 RUN apk add -U --no-cache ca-certificates
