@@ -334,6 +334,17 @@ type (
 		Debug        bool   `envconfig:"DRONE_GITLAB_DEBUG"`
 	}
 
+	// Gitee provides the gitee clinet configuration.
+	Gitee struct {
+		Server		 string   `envconfig:"DRONE_GITEE_SERVER" default:"https://gitee.com"`
+		ClientID 	 string   `envconfig:"DRONE_GITEE_CLIENT_ID"`
+		ClientSecret string   `envconfig:"DRONE_GITEE_CLIENT_SECRET"`
+		SkipVerify	 bool     `envconfig:"DRONE_GITEE_SKIP_VERIFY"`
+		Scope        []string `envconfig:"DRONE_GITEE_SCOPE: default:""`
+		RateLimit    int      `envconfig:"DRONE_GITEE_USER_RATELIMIT"`
+		Debug        bool     `envconfig:"DRONE_GITEE_DEBUG"`
+	}
+
 	// Gogs provides the gogs client configuration.
 	Gogs struct {
 		Server     string `envconfig:"DRONE_GOGS_SERVER"`
