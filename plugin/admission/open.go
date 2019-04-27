@@ -18,7 +18,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 // ErrClosed is returned when attempting to create a new

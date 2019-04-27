@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/store/repos"
-	"github.com/drone/drone/store/shared/db"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/store/repos"
+	"github.com/leonzhao/drone/store/shared/db"
 )
 
 // New returns a new Batcher.

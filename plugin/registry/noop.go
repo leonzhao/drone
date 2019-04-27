@@ -17,7 +17,7 @@ package registry
 import (
 	"context"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 type noop struct{}

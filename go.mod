@@ -1,4 +1,4 @@
-module github.com/drone/drone
+module github.com/leonzhao/drone
 
 require (
 	docker.io/go-docker v1.0.0
@@ -15,15 +15,15 @@ require (
 	github.com/docker/distribution v2.7.1+incompatible
 	github.com/docker/go-connections v0.3.0
 	github.com/docker/go-units v0.3.3
-	github.com/drone/drone-go v0.0.0-20190217024616-3e8b71333e59
-	github.com/drone/drone-runtime v1.0.6
-	github.com/drone/drone-ui v0.0.0-20190423061913-b758d7bee2eb
-	github.com/drone/drone-yaml v1.0.9-0.20190424150956-115b2ff5f99e
-	github.com/drone/envsubst v1.0.1
-	github.com/drone/go-license v1.0.2
-	github.com/drone/go-login v1.0.4-0.20190311170324-2a4df4f242a2
-	github.com/drone/go-scm v1.4.1-0.20190418181654-1e77204716f6
-	github.com/drone/signal v1.0.0
+	github.com/leonzhao/drone-go v0.0.0-20190217024616-3e8b71333e59
+	github.com/leonzhao/drone-runtime v1.0.6
+	github.com/leonzhao/drone-ui v0.0.0-20190423061913-b758d7bee2eb
+	github.com/leonzhao/drone-yaml v1.0.9-0.20190424150956-115b2ff5f99e
+	github.com/leonzhao/envsubst v1.0.1
+	github.com/leonzhao/go-license v1.0.2
+	github.com/leonzhao/go-login v1.0.4-0.20190311170324-2a4df4f242a2
+	github.com/leonzhao/go-scm v1.4.1-0.20190418181654-1e77204716f6
+	github.com/leonzhao/signal v1.0.0
 	github.com/dustin/go-humanize v1.0.0
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-chi/chi v3.3.3+incompatible

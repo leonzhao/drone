@@ -10,7 +10,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 
 	"github.com/hashicorp/golang-lru"
 )

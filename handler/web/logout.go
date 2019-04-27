@@ -17,7 +17,7 @@ package web
 import (
 	"net/http"
 
-	"github.com/drone/drone-ui/dist"
+	"github.com/leonzhao/drone-ui/dist"
 )
 
 // HandleLogout creates an http.HandlerFunc that handles

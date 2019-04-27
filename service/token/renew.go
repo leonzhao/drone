@@ -10,10 +10,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 
-	"github.com/drone/go-scm/scm"
-	"github.com/drone/go-scm/scm/transport/oauth2"
+	"github.com/leonzhao/go-scm/scm"
+	"github.com/leonzhao/go-scm/scm/transport/oauth2"
 )
 
 // expiryDelta determines how earlier a token should be considered

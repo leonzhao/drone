@@ -18,7 +18,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 // NewService returns a new License service.

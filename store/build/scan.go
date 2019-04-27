@@ -18,8 +18,8 @@ import (
 	"database/sql"
 	"encoding/json"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/store/shared/db"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/store/shared/db"
 
 	"github.com/jmoiron/sqlx/types"
 )

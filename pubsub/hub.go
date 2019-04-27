@@ -18,7 +18,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 type hub struct {

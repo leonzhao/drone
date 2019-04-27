@@ -22,9 +22,9 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/go-license/license"
-	"github.com/drone/go-license/license/licenseutil"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/go-license/license"
+	"github.com/leonzhao/go-license/license/licenseutil"
 )
 
 // embedded public key used to verify license signatures.

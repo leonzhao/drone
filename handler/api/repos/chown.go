@@ -17,10 +17,10 @@ package repos
 import (
 	"net/http"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/render"
-	"github.com/drone/drone/handler/api/request"
-	"github.com/drone/drone/logger"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/handler/api/render"
+	"github.com/leonzhao/drone/handler/api/request"
+	"github.com/leonzhao/drone/logger"
 
 	"github.com/go-chi/chi"
 )

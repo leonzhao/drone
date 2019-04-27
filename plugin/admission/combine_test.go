@@ -9,8 +9,8 @@ package admission
 import (
 	"testing"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/mock"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/mock"
 	"github.com/golang/mock/gomock"
 )
 

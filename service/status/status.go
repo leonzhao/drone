@@ -18,8 +18,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/go-scm/scm"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/go-scm/scm"
 )
 
 // Config configures the Status service.

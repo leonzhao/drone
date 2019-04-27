@@ -10,9 +10,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/drone/drone-go/drone"
-	"github.com/drone/drone-go/plugin/admission"
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone-go/drone"
+	"github.com/leonzhao/drone-go/plugin/admission"
+	"github.com/leonzhao/drone/core"
 )
 
 // External returns a new external Admission controller.

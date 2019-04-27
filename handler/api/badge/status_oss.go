@@ -21,7 +21,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 // Handler returns a no-op http.HandlerFunc.

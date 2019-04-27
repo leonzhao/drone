@@ -17,8 +17,8 @@ package registry
 import (
 	"context"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/logger"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/logger"
 
 	"github.com/sirupsen/logrus"
 )

@@ -19,7 +19,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 type queue struct {

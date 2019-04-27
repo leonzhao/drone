@@ -23,9 +23,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/drone/drone-go/drone"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/render"
+	"github.com/leonzhao/drone-go/drone"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/handler/api/render"
 	"github.com/go-chi/chi"
 )
 

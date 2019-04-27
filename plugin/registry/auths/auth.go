@@ -22,7 +22,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 // config represents the Docker client configuration,

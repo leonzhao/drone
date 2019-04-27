@@ -18,7 +18,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 // error returned when no configured found.

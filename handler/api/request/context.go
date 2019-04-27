@@ -19,7 +19,7 @@ package request
 import (
 	"context"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 type key int

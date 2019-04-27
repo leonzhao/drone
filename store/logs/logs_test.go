@@ -11,11 +11,11 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/drone/drone/store/shared/db/dbtest"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/store/build"
-	"github.com/drone/drone/store/repos"
-	"github.com/drone/drone/store/step"
+	"github.com/leonzhao/drone/store/shared/db/dbtest"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/store/build"
+	"github.com/leonzhao/drone/store/repos"
+	"github.com/leonzhao/drone/store/step"
 )
 
 var noContext = context.TODO()

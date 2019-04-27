@@ -9,9 +9,9 @@ package queue
 import (
 	"net/http"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/render"
-	"github.com/drone/drone/logger"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/handler/api/render"
+	"github.com/leonzhao/drone/logger"
 )
 
 // HandleResume returns an http.HandlerFunc that processes

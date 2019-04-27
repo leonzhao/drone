@@ -17,8 +17,8 @@ package perm
 import (
 	"context"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/store/shared/db"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/store/shared/db"
 )
 
 // New returns a new PermStore.

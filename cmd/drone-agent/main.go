@@ -10,13 +10,13 @@ import (
 	"context"
 	"time"
 
-	"github.com/drone/drone-runtime/engine/docker"
-	"github.com/drone/drone/cmd/drone-agent/config"
-	"github.com/drone/drone/operator/manager/rpc"
-	"github.com/drone/drone/operator/runner"
-	"github.com/drone/drone/plugin/registry"
-	"github.com/drone/drone/plugin/secret"
-	"github.com/drone/signal"
+	"github.com/leonzhao/drone-runtime/engine/docker"
+	"github.com/leonzhao/drone/cmd/drone-agent/config"
+	"github.com/leonzhao/drone/operator/manager/rpc"
+	"github.com/leonzhao/drone/operator/runner"
+	"github.com/leonzhao/drone/plugin/registry"
+	"github.com/leonzhao/drone/plugin/secret"
+	"github.com/leonzhao/signal"
 
 	"github.com/sirupsen/logrus"
 

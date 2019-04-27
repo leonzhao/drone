@@ -15,11 +15,11 @@
 package main
 
 import (
-	"github.com/drone/drone/cmd/drone-server/config"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/scheduler/kube"
-	"github.com/drone/drone/scheduler/nomad"
-	"github.com/drone/drone/scheduler/queue"
+	"github.com/leonzhao/drone/cmd/drone-server/config"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/scheduler/kube"
+	"github.com/leonzhao/drone/scheduler/nomad"
+	"github.com/leonzhao/drone/scheduler/queue"
 
 	"github.com/google/wire"
 	"github.com/sirupsen/logrus"

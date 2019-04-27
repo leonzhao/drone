@@ -11,9 +11,9 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/request"
-	"github.com/drone/drone/mock"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/handler/api/request"
+	"github.com/leonzhao/drone/mock"
 
 	"github.com/go-chi/chi"
 	"github.com/golang/mock/gomock"

@@ -10,9 +10,9 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/mock"
-	"github.com/drone/go-scm/scm"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/mock"
+	"github.com/leonzhao/go-scm/scm"
 	"github.com/sirupsen/logrus"
 
 	"github.com/golang/mock/gomock"

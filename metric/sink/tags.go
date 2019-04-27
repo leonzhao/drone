@@ -9,7 +9,7 @@ package sink
 import (
 	"fmt"
 
-	"github.com/drone/drone/version"
+	"github.com/leonzhao/drone/version"
 )
 
 func createTags(config Config) []string {

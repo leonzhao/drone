@@ -18,9 +18,9 @@ import (
 	"net/http"
 
 	"github.com/dchest/uniuri"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/render"
-	"github.com/drone/drone/handler/api/request"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/handler/api/render"
+	"github.com/leonzhao/drone/handler/api/request"
 )
 
 type userWithToken struct {

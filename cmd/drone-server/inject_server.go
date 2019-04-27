@@ -17,14 +17,14 @@ package main
 import (
 	"net/http"
 
-	"github.com/drone/drone/cmd/drone-server/config"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api"
-	"github.com/drone/drone/handler/web"
-	"github.com/drone/drone/metric"
-	"github.com/drone/drone/operator/manager"
-	"github.com/drone/drone/operator/manager/rpc"
-	"github.com/drone/drone/server"
+	"github.com/leonzhao/drone/cmd/drone-server/config"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/handler/api"
+	"github.com/leonzhao/drone/handler/web"
+	"github.com/leonzhao/drone/metric"
+	"github.com/leonzhao/drone/operator/manager"
+	"github.com/leonzhao/drone/operator/manager/rpc"
+	"github.com/leonzhao/drone/server"
 	"github.com/google/wire"
 
 	"github.com/go-chi/chi"

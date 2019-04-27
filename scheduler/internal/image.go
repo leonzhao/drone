@@ -9,7 +9,7 @@ package internal
 import (
 	"fmt"
 
-	"github.com/drone/drone/version"
+	"github.com/leonzhao/drone/version"
 )
 
 var defaultImage = fmt.Sprintf(

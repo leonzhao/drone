@@ -19,9 +19,9 @@ package token
 import (
 	"context"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 
-	"github.com/drone/go-scm/scm/transport/oauth2"
+	"github.com/leonzhao/go-scm/scm/transport/oauth2"
 )
 
 type renewer struct {

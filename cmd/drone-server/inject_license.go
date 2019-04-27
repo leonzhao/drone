@@ -15,10 +15,10 @@
 package main
 
 import (
-	"github.com/drone/drone/cmd/drone-server/config"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/service/license"
-	"github.com/drone/go-scm/scm"
+	"github.com/leonzhao/drone/cmd/drone-server/config"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/service/license"
+	"github.com/leonzhao/go-scm/scm"
 
 	"github.com/google/wire"
 	"github.com/sirupsen/logrus"

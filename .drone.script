@@ -65,9 +65,9 @@ def build_step(os, arch):
     'name': 'build',
     'image': 'golang:1.11',
     'commands': [
-        'go build -ldflags \"-extldflags \\\\\"-static\\\\\"\" -o release/%s/%s/drone-server github.com/drone/drone/cmd/drone-server' % (os, arch),
-        'CGO_ENABLED=0 go build -o release/%s/%s/drone-agent github.com/drone/drone/cmd/drone-agent' % (os, arch),
-        'CGO_ENABLED=0 go build -o release/%s/%s/drone-controller github.com/drone/drone/cmd/drone-controller' % (os, arch),
+        'go build -ldflags \"-extldflags \\\\\"-static\\\\\"\" -o release/%s/%s/drone-server github.com/leonzhao/drone/cmd/drone-server' % (os, arch),
+        'CGO_ENABLED=0 go build -o release/%s/%s/drone-agent github.com/leonzhao/drone/cmd/drone-agent' % (os, arch),
+        'CGO_ENABLED=0 go build -o release/%s/%s/drone-controller github.com/leonzhao/drone/cmd/drone-controller' % (os, arch),
     ]
   }
 

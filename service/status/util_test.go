@@ -7,8 +7,8 @@ package status
 import (
 	"testing"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/go-scm/scm"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/go-scm/scm"
 )
 
 func TestCreateLabel(t *testing.T) {

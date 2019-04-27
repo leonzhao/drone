@@ -15,14 +15,14 @@
 package main
 
 import (
-	spec "github.com/drone/drone/cmd/drone-server/config"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/plugin/admission"
-	"github.com/drone/drone/plugin/config"
-	"github.com/drone/drone/plugin/registry"
-	"github.com/drone/drone/plugin/secret"
-	"github.com/drone/drone/plugin/webhook"
-	"github.com/drone/go-scm/scm"
+	spec "github.com/leonzhao/drone/cmd/drone-server/config"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/plugin/admission"
+	"github.com/leonzhao/drone/plugin/config"
+	"github.com/leonzhao/drone/plugin/registry"
+	"github.com/leonzhao/drone/plugin/secret"
+	"github.com/leonzhao/drone/plugin/webhook"
+	"github.com/leonzhao/go-scm/scm"
 
 	"github.com/google/wire"
 )

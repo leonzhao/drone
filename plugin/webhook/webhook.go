@@ -15,7 +15,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 
 	"github.com/99designs/httpsignatures-go"
 )

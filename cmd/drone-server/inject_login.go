@@ -15,15 +15,15 @@
 package main
 
 import (
-	"github.com/drone/drone/cmd/drone-server/config"
-	"github.com/drone/go-login/login"
-	"github.com/drone/go-login/login/bitbucket"
-	"github.com/drone/go-login/login/gitea"
-	"github.com/drone/go-login/login/github"
-	"github.com/drone/go-login/login/gitlab"
-	"github.com/drone/go-login/login/gogs"
-	"github.com/drone/go-login/login/stash"
-	"github.com/drone/go-scm/scm/transport/oauth2"
+	"github.com/leonzhao/drone/cmd/drone-server/config"
+	"github.com/leonzhao/go-login/login"
+	"github.com/leonzhao/go-login/login/bitbucket"
+	"github.com/leonzhao/go-login/login/gitea"
+	"github.com/leonzhao/go-login/login/github"
+	"github.com/leonzhao/go-login/login/gitlab"
+	"github.com/leonzhao/go-login/login/gogs"
+	"github.com/leonzhao/go-login/login/stash"
+	"github.com/leonzhao/go-scm/scm/transport/oauth2"
 
 	"github.com/google/wire"
 	"github.com/sirupsen/logrus"

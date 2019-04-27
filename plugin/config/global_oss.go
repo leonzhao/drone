@@ -19,7 +19,7 @@ package config
 import (
 	"context"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 // Global returns a no-op configuration service.

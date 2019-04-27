@@ -21,10 +21,10 @@ import (
 	"encoding/base64"
 	"errors"
 
-	"github.com/drone/drone-yaml/yaml"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/logger"
-	"github.com/drone/drone/plugin/registry/auths"
+	"github.com/leonzhao/drone-yaml/yaml"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/drone/logger"
+	"github.com/leonzhao/drone/plugin/registry/auths"
 )
 
 // Encrypted returns a new encrypted registry credentials

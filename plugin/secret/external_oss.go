@@ -19,7 +19,7 @@ package secret
 import (
 	"context"
 
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone/core"
 )
 
 // External returns a no-op registry secret provider.

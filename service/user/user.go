@@ -17,8 +17,8 @@ package user
 import (
 	"context"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/go-scm/scm"
+	"github.com/leonzhao/drone/core"
+	"github.com/leonzhao/go-scm/scm"
 )
 
 type service struct {

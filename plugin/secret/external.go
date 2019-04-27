@@ -10,11 +10,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/drone/drone-yaml/yaml"
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone-yaml/yaml"
+	"github.com/leonzhao/drone/core"
 
-	"github.com/drone/drone-go/drone"
-	"github.com/drone/drone-go/plugin/secret"
+	"github.com/leonzhao/drone-go/drone"
+	"github.com/leonzhao/drone-go/plugin/secret"
 )
 
 // External returns a new external Secret controller.

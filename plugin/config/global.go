@@ -10,9 +10,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/drone/drone-go/drone"
-	"github.com/drone/drone-go/plugin/config"
-	"github.com/drone/drone/core"
+	"github.com/leonzhao/drone-go/drone"
+	"github.com/leonzhao/drone-go/plugin/config"
+	"github.com/leonzhao/drone/core"
 )
 
 // Global returns a configuration service that fetches the yaml
