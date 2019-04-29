@@ -23,6 +23,7 @@ import (
 	"github.com/drone/go-login/login/gitlab"
 	"github.com/drone/go-login/login/gogs"
 	"github.com/drone/go-login/login/stash"
+	"github.com/drone/go-login/login/gitee"
 	"github.com/drone/go-scm/scm/transport/oauth2"
 
 	"github.com/google/wire"
@@ -51,6 +52,8 @@ func provideLogin(config config.Config) login.Middleware {
 		return provideGogsLogin(config)
 	case config.Stash.ConsumerKey != "":
 		return provideStashLogin(config)
+	case config.Gitee.ClientID != "":
+		return provideGiteeLogin(config)
 	}
 	logrus.Fatalln("main: source code management system not configured")
 	return nil
@@ -158,6 +161,21 @@ func provideStashLogin(config config.Config) login.Middleware {
 		PrivateKey:     privateKey,
 		CallbackURL:    config.Server.Addr + "/login",
 		Client:         defaultClient(config.Stash.SkipVerify),
+	}
+}
+
+// provideGiteeLogin is a Wire provider function that returns
+// a Gitee authenticator based on the environment configuration.
+func provideGiteeLogin(config config.Config) login.Middleware {
+	if config.Gitee.ClientID == "" {
+		return nil
+	}
+	return &gitee.Config{
+		ClientID:     config.GitLab.ClientID,
+		ClientSecret: config.GitLab.ClientSecret,
+		RedirectURL:  config.Server.Addr + "/login",
+		Server:       config.GitLab.Server,
+		Client:       defaultClient(config.GitLab.SkipVerify),	
 	}
 }
 

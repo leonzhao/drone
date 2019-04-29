@@ -56,10 +56,14 @@ func provideClient(config config.Config) *scm.Client {
 		return provideGiteaClient(config)
 	case config.GitLab.ClientID != "":
 		return provideGitlabClient(config)
+	case config.Gitee.ClientID != "":
+		return provideGiteeClient(config)
 	case config.Gogs.Server != "":
 		return provideGogsClient(config)
 	case config.Stash.ConsumerKey != "":
 		return provideStashClient(config)
+	case config.Gitee.ClientID != "":
+		return provideGiteeClient(config)
 	}
 	logrus.Fatalln("main: source code management system not configured")
 	return nil
@@ -222,6 +226,32 @@ func provideStashClient(config config.Config) *scm.Client {
 	}
 	return client
 }
+
+// provideGiteeClient is a Wire provider function that returns
+// a Gitee client based on the environment configuration
+func provideGiteeClient(config config.Config) *scm.Client {
+	logrus.WithField("server", config.Gitee.Server).
+		WithField("client", config.Gitee.ClientID).
+		WithField("skip_verify", config.Gitee.SkipVerify).
+		Debugln("main: creating the Gitee client")
+
+	client, err := gitlab.New(config.Gitee.Server)
+	if err != nil {
+		logrus.WithError(err).
+			Fatalln("main: cannot create the Gitee client")
+	}
+	if config.Gitee.Debug {
+		client.DumpResponse = httputil.DumpResponse
+	}
+	client.Client = &http.Client{
+		Transport: &oauth2.Transport{
+			Source: oauth2.ContextTokenSource(),
+			Base:   defaultTransport(config.Gitee.SkipVerify),
+		},
+	}
+	return client
+}
+
 
 // defaultClient provides a default http.Client. If skipverify
 // is true, the default transport will skip ssl verification.

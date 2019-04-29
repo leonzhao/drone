@@ -78,6 +78,7 @@ type (
 		Bitbucket Bitbucket
 		Gitea     Gitea
 		Github    Github
+		Gitee     Gitee
 		GitLab    GitLab
 		Gogs      Gogs
 		Stash     Stash
@@ -334,6 +335,15 @@ type (
 		Debug        bool   `envconfig:"DRONE_GITLAB_DEBUG"`
 	}
 
+	// Gitee provides the gitee clinet configuration.
+	Gitee struct {
+		Server		 string   `envconfig:"DRONE_GITEE_SERVER" default:"https://gitee.com"`
+		ClientID 	 string   `envconfig:"DRONE_GITEE_CLIENT_ID"`
+		ClientSecret string   `envconfig:"DRONE_GITEE_CLIENT_SECRET"`
+		SkipVerify	 bool     `envconfig:"DRONE_GITEE_SKIP_VERIFY"`
+		Debug        bool     `envconfig:"DRONE_GITEE_DEBUG"`
+	}
+
 	// Gogs provides the gogs client configuration.
 	Gogs struct {
 		Server     string `envconfig:"DRONE_GOGS_SERVER"`
@@ -438,6 +448,12 @@ func (c *Config) IsBitbucket() bool {
 // integration is activated.
 func (c *Config) IsStash() bool {
 	return c.Stash.Server != ""
+}
+
+// IsGitee returns true if the Gitee integration
+// is activated
+func (c *Config) IsGitee() bool {
+	return c.Gitee.Server != ""
 }
 
 func defaultAddress(c *Config) {
